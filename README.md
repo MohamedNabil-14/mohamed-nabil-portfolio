@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Mohamed Nabil — UI/UX Designer Portfolio
 
 Premium personal portfolio for **Mohamed Nabil Ahmed**, UI/UX Designer specializing in
@@ -110,3 +111,6 @@ After deploying, replace `https://mohamednabil.design` with your live URL in `si
 ## 📄 License
 
 Personal content © Mohamed Nabil Ahmed — see [LICENSE](LICENSE).
+=======
+# mohamed-nabil-portfolio
+>>>>>>> ae1dca3dc49b9b1f8222a7f5b01a94284d1e0226
