@@ -73,7 +73,7 @@ window.DATA.site = {
   "_testimonials_howto": "AUTHENTIC CONTENT ONLY: LinkedIn blocks automated reading, so paste the real post text into 'quote' below (plus the author's name/role/company and optionally an avatar image path in assets/images/profile/). A card appears automatically once its 'quote' is filled; the section stays hidden while all quotes are empty.",
   "testimonials": [
     { "quote": "I'd like to express my sincere gratitude…", "name": "Mohamed Nabil", "role": "Appreciation post", "company": "LinkedIn", "avatar": "assets/images/profile/me.jpeg", "url": "https://www.linkedin.com/posts/mnabil14_id-like-to-express-my-sincere-gratitude-ugcPost-7397283873350553600-T2L0/" },
-    { "quote": "", "name": "", "role": "", "company": "", "avatar": "", "url": "https://www.linkedin.com/posts/mnabil14_uiux-webdesign-productdesign-share-7434604586243579904-sJ9k/" },
+    { "quote": "Proud to be part of the launch of GBG Academy…", "name": "Mohamed Nabil", "role": "Appreciation post", "company": "LinkedIn", "avatar": "assets/images/profile/me.jpeg", "url": "https://www.linkedin.com/posts/mnabil14_uiux-webdesign-productdesign-share-7434604586243579904-sJ9k/" },
     { "quote": "Thrilled to share that I've officially completed…", "name": "Mohamed Nabil", "role": "Achievement", "company": "LinkedIn", "avatar": "assets/images/profile/me.jpeg", "url": "https://www.linkedin.com/posts/mnabil14_thrilled-to-share-that-ive-officially-completed-ugcPost-7397282952641941504-2CKx/" }
   ]
 };
