@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     INDEX.HTML — HOME
+     Structure: hero → domains marquee → stats → featured work →
+     enterprise (NDA) work → process → Behance spotlight →
+     testimonials → CTA band. Header/footer are injected by
+     assets/js/main.js; all content comes from assets/data/*.js.
+     ============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Nabil — UI/UX Designer · Web, Mobile, SharePoint & Power Apps</title>
+
+  <!-- SEO -->
+  <meta name="description" content="UI/UX Designer in Egypt designing exceptional Web, Mobile, SharePoint and Microsoft Power Apps experiences — enterprise systems, CRM, dashboards and design systems with a strong focus on usability and accessibility.">
+  <meta name="keywords" content="UI/UX Designer Egypt, Web Application Design, Mobile App Design, SharePoint Designer, Microsoft Power Apps Designer, Dashboard Design, Enterprise UX, CRM UX, Design Systems, Figma Expert">
+  <meta name="author" content="Mohamed Nabil Ahmed">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://mohamednabil.design/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohamed Nabil — UI/UX Designer">
+  <meta property="og:description" content="I design exceptional Web, Mobile, SharePoint and Microsoft Power Apps experiences — usability, accessibility and enterprise solutions.">
+  <meta property="og:url" content="https://mohamednabil.design/">
+  <meta property="og:site_name" content="Mohamed Nabil">
+  <meta property="og:image" content="https://mohamednabil.design/assets/images/profile/me.jpeg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mohamed Nabil — UI/UX Designer">
+  <meta name="twitter:description" content="I design exceptional Web, Mobile, SharePoint and Microsoft Power Apps experiences.">
+  <meta name="twitter:image" content="https://mohamednabil.design/assets/images/profile/me.jpeg">
+
+  <!-- Structured data (Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohamed Nabil Ahmed",
+    "jobTitle": "UI/UX Designer",
+    "email": "mailto:m.nabil9418@gmail.com",
+    "url": "https://mohamednabil.design",
+    "address": { "@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG" },
+    "sameAs": [
+      "https://www.linkedin.com/in/mnabil14/",
+      "https://www.behance.net/mohamednabil94",
+      "https://dribbble.com/Monabil14",
+      "https://instagram.com/mohamednabil_14"
+    ]
+  }
+  </script>
+
+  <!-- Fonts (system fallbacks defined in variables.css) -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles: tokens → core → responsive → motion -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Header + mobile menu injected here by main.js -->
+
+  <main id="main">
+
+    <!-- ══ HERO ══════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div>
+          <p class="eyebrow" style="animation:fadeUp 0.6s var(--ease-out) both">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            Available — Full Time · Part Time · Freelancer
+          </p>
+
+          <!-- Word-by-word animated headline (animations.js) -->
+          <h1 class="display hero__title">
+            <span data-words>I design</span>
+            <span class="text-gradient" data-words data-words-delay="250">exceptional digital</span>
+            <span data-words data-words-delay="500">experiences.</span>
+          </h1>
+
+          <!-- Rotating specialty (animations.js fills from site.js) -->
+          <p class="hero__rotator">Specializing in <strong id="hero-rotator" aria-live="polite"></strong></p>
+
+          <p class="hero__intro" style="animation:fadeUp 0.8s var(--ease-out) both 0.9s">
+            I design exceptional Web, Mobile, SharePoint and Microsoft Power Apps experiences with a
+            strong focus on usability, accessibility and enterprise solutions — currently shaping HR,
+            CRM and administration platforms at Global Brands Group.
+          </p>
+
+          <div class="hero__ctas" style="animation:fadeUp 0.8s var(--ease-out) both 1.1s">
+            <a class="btn btn--primary" href="projects.html">Explore my work →</a>
+            <a class="btn btn--outline" href="assets/files/Mohamed_Nabil_UI_UX_Designer_CV.pdf" data-cv download>⬇ Download CV</a>
+            <div class="hero__socials">
+              <a class="icon-btn" href="https://www.behance.net/mohamednabil94" target="_blank" rel="noopener noreferrer" data-outbound="behance" aria-label="Behance (opens in new tab)" style="font-weight:700;font-size:0.8rem">Bē</a>
+              <a class="icon-btn" href="https://www.linkedin.com/in/mnabil14/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)" style="font-weight:700;font-size:0.8rem">in</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portrait + floating chips — title sits ABOVE the photo -->
+        <div class="hero__portrait" data-reveal="zoom">
+          <p class="hero__portrait-title">UI/UX Designer</p>
+          <div class="hero__portrait-frame">
+            <!-- Your photo: drop assets/images/profile/me.jpg (any size,
+                 face centered — it is cover-cropped, never stretched).
+                 Until the file exists, the Behance avatar is shown. -->
+            <img src="assets/images/profile/me.jpeg"
+                 onerror="this.onerror=null;this.src='https://pps.services.adobe.com/api/profile/C32E60815E0F4A310A495E93@AdobeID/image/e45a7dfe-59f1-49fc-abd1-07abdde5c0bc/276'"
+                 alt="Mohamed Nabil Ahmed — portrait" width="640" height="800">
+            <div class="hero__portrait-caption">
+              <strong>Mohamed Nabil Ahmed</strong>
+              <small>Cairo, Egypt</small>
+            </div>
+          </div>
+          <div class="float-chip float-chip--1" aria-hidden="true"><small>Currently at</small><strong>Global Brands Group</strong></div>
+          <div class="float-chip float-chip--2" aria-hidden="true"><small>Focus</small><strong>Web · Mobile · SharePoint · Power Apps</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ DOMAINS MARQUEE (from site.js) ═══════════════════ -->
+    <div class="marquee" id="domains-marquee" aria-hidden="true"></div>
+
+    <!-- ══ ANIMATED STATS (from site.js) ════════════════════ -->
+    <section class="section--tinted" aria-label="Key numbers">
+      <div class="container stats" id="stats"></div>
+    </section>
+
+    <!-- ══ FEATURED PROJECTS (from projects.js) ═════════════ -->
+    <section class="section" aria-label="Featured work">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Selected work — imported from Behance</p>
+          <h2 class="display" data-reveal data-reveal-delay="80">Projects that tell a story</h2>
+          <p data-reveal data-reveal-delay="160">Every project links back to its original Behance case study. Enterprise work under NDA is summarized below.</p>
+        </div>
+        <div class="grid grid--3" id="featured-projects"></div>
+        <p style="text-align:center;margin-top:3rem" data-reveal>
+          <a class="btn btn--outline" href="projects.html">Browse all projects →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ══ ENTERPRISE / NDA WORK (from projects.js) ═════════ -->
+    <section class="section section--tinted" aria-label="Enterprise work">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Enterprise — the day job</p>
+          <h2 class="display" data-reveal data-reveal-delay="80">The work you can't see on Behance</h2>
+          <p data-reveal data-reveal-delay="160">CRM, HR, SharePoint and Microsoft Power Apps platforms designed for Global Brands Group and clients. Under NDA — walkthroughs available on request.</p>
+        </div>
+        <div class="grid grid--3" id="enterprise-grid"></div>
+      </div>
+    </section>
+
+    <!-- ══ DESIGN PROCESS (from site.js) ════════════════════ -->
+    <section class="section" aria-label="Design process">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Method</p>
+          <h2 class="display" data-reveal data-reveal-delay="80">How I take designs from fog to shipped</h2>
+          <p data-reveal data-reveal-delay="160">Ten steps, endlessly looped. Click any step to explore.</p>
+        </div>
+        <div id="process"></div>
+      </div>
+    </section>
+
+    <!-- ══ BEHANCE SPOTLIGHT (from site.js) ═════════════════ -->
+    <section class="section" style="padding-top:0" aria-label="Behance profile">
+      <div class="container" id="behance-banner"></div>
+    </section>
+
+    <!-- ══ TESTIMONIALS (placeholders in site.js) ═══════════ -->
+    <section class="section section--tinted" aria-label="Testimonials">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>LinkedIn</p>
+          <h2 class="display" data-reveal data-reveal-delay="80">Professional Recognition &amp; Testimonials</h2>
+          <p data-reveal data-reveal-delay="160">Real appreciation, achievements, and professional recognition from my journey as a UI/UX Designer.</p>
+        </div>
+        <div class="grid grid--3" id="testimonials-grid"></div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACT CTA ══════════════════════════════════════ -->
+    <section class="cta-band" aria-label="Contact call to action">
+      <p class="eyebrow" data-reveal>Available — Full Time · Part Time · Freelancer</p>
+      <h2 class="display" style="margin-top:1.2rem" data-reveal data-reveal-delay="80">Have an enterprise platform that needs untangling?</h2>
+      <p style="margin-top:2.2rem" data-reveal data-reveal-delay="160">
+        <a class="btn btn--primary" href="contact.html">Get in touch →</a>
+      </p>
+    </section>
+
+  </main>
+  <!-- Footer injected here by main.js -->
+
+  <!-- Data layer (edit these files to change all content) -->
+  <script src="assets/data/site.js"></script>
+  <script src="assets/data/projects.js"></script>
+  <script src="assets/data/graphics.js"></script>
+  <script src="assets/data/certificates.js"></script>
+  <script src="assets/data/experience.js"></script>
+  <script src="assets/data/skills.js"></script>
+  <!-- Behavior -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+</body>
+</html>

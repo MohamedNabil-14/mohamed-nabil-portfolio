@@ -1,0 +1,69 @@
+/* ============================================================
+   RESPONSIVE.CSS — BREAKPOINTS
+   ------------------------------------------------------------
+   Mobile-first overrides. Breakpoints:
+   ≤ 1100px  laptop     ≤ 860px  tablet
+   ≤ 640px   mobile     ≥ 1800px ultra-wide
+   ============================================================ */
+
+/* ── Laptop ── */
+@media (max-width: 1100px) {
+  .grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .grid--3 { grid-template-columns: repeat(2, 1fr); }
+  .case-layout { grid-template-columns: 1fr 15rem; gap: 2rem; }
+}
+
+/* ── Tablet ── */
+@media (max-width: 860px) {
+  /* Navigation: collapse links into burger menu */
+  .nav__links { display: none; }
+  .nav__burger { display: inline-flex; }
+  .nav__cta { display: none; }
+
+  .hero__inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero__portrait { max-width: 18rem; }
+  .float-chip--1 { left: 0; }
+  .float-chip--2 { right: 0; }
+
+  .grid--2 { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats__item:nth-child(3) { border-left: 0; }
+  .stats__item { border-top: 1px solid var(--line); }
+  .stats__item:nth-child(-n+2) { border-top: 0; }
+
+  .behance-banner__inner { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+  .behance-banner__stats { justify-content: center; }
+
+  .case-layout { grid-template-columns: 1fr; }
+  .case-aside { position: static; }
+  .case-meta { grid-template-columns: repeat(2, 1fr); }
+  .case-results { grid-template-columns: 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .grid--3, .grid--4 { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .section-head { margin-bottom: 2.5rem; }
+  .hero__ctas .btn { width: 100%; justify-content: center; }
+  .hero__socials { width: 100%; justify-content: center; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .timeline { padding-left: 1.8rem; }
+  .timeline__dot { left: calc(-1.8rem - 9px); }
+  .lightbox__nav--prev { left: 0.4rem; }
+  .lightbox__nav--next { right: 0.4rem; }
+}
+
+/* ── Ultra-wide: cap content, scale hero type ── */
+@media (min-width: 1800px) {
+  :root { --container: 80rem; }
+  .hero__inner { max-width: 80rem; }
+}
+
+/* ── Touch devices: overlays always visible enough ── */
+@media (hover: none) {
+  .project-card:hover { transform: none; }
+}

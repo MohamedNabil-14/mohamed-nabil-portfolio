@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     CONTACT.HTML — direct channels (email / LinkedIn / Behance /
+     WhatsApp), CV download, copy-email and Calendly placeholder.
+     Channel data comes from assets/data/site.js.
+     ============================================================ -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Mohamed Nabil</title>
+  <meta name="description" content="Get in touch — email, LinkedIn, Behance, WhatsApp, or download my CV. Available for Full Time, Part Time and Freelance roles.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Mohamed Nabil">
+  <meta property="og:description" content="Available for Full Time, Part Time and Freelance UI/UX design roles.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <main id="main">
+    <section class="section" style="padding-top:calc(var(--nav-height) + 4rem)" aria-label="Contact">
+      <div class="container container--narrow">
+        <p class="eyebrow" data-reveal>Contact</p>
+        <h1 class="display" style="font-size:clamp(2.4rem,6vw,4.2rem);margin-top:1.2rem">
+          <span data-words>Let's make something worth</span>
+          <span class="text-gradient" data-words data-words-delay="400">shipping.</span>
+        </h1>
+        <p class="muted" style="max-width:34rem;margin-top:1.4rem" data-reveal data-reveal-delay="150">
+          Open to UI/UX design roles and freelance engagements — web applications, mobile apps,
+          SharePoint, Power Apps and dashboards. Based in Cairo, working with teams anywhere.
+        </p>
+
+        <!-- Quick actions -->
+        <div style="display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.2rem" data-reveal data-reveal-delay="220">
+          <a class="btn btn--primary" href="assets/files/Mohamed_Nabil_UI_UX_Designer_CV.pdf" data-cv download>⬇ Download CV</a>
+          <button class="btn btn--outline" id="copy-email" aria-label="Copy my email address">Copy email</button>
+        </div>
+
+        <!-- Channel cards injected from DATA.site -->
+        <div class="grid grid--2" style="margin-top:3rem" id="channels"></div>
+
+        <!-- Calendly placeholder -->
+        <div class="info-card" style="margin-top:2rem;border-style:dashed;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between" data-reveal>
+          <div style="display:flex;gap:1rem;align-items:center">
+            <span class="channel-icon" aria-hidden="true">📅</span>
+            <div>
+              <strong>Book a 30-minute intro call</strong>
+              <p class="muted" style="font-size:var(--text-sm)">Calendly placeholder — set your link in assets/data/site.js</p>
+            </div>
+          </div>
+          <a class="btn btn--outline" href="https://calendly.com/" target="_blank" rel="noopener noreferrer">Open Calendly ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/data/site.js"></script>
+  <script src="assets/data/projects.js"></script>
+  <script src="assets/data/graphics.js"></script>
+  <script src="assets/data/certificates.js"></script>
+  <script src="assets/data/experience.js"></script>
+  <script src="assets/data/skills.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+</body>
+</html>

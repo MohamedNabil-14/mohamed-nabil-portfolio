@@ -1,0 +1,80 @@
+/* ============================================================
+   VARIABLES.CSS — DESIGN TOKENS
+   ------------------------------------------------------------
+   Change the whole look of the site from this one file:
+   colors, typography, spacing, radius, shadows, motion.
+   Dark theme is the default; [data-theme="light"] overrides.
+   ============================================================ */
+
+:root {
+  /* ── Brand accent (indigo → violet) ── */
+  --accent:        #6366f1;
+  --accent-violet: #8b5cf6;
+  --accent-glow:   #a78bfa;
+  --accent-rgb:    99, 102, 241;
+  --gradient-accent: linear-gradient(120deg, var(--accent), var(--accent-violet));
+  --behance-blue:  #0057ff;
+
+  /* ── Dark theme surfaces & ink (default) ── */
+  --surface:        #09090b;   /* page background            */
+  --surface-raised: #121215;   /* cards, nav, panels         */
+  --ink:            #f4f4f5;   /* primary text               */
+  --ink-muted:      #a1a1aa;   /* secondary text             */
+  --ink-faint:      #71717a;   /* tertiary text / hints      */
+  --line:           #27272d;   /* borders & dividers         */
+  --line-rgb:       39, 39, 45;
+  --glass-bg:       rgba(18, 18, 21, 0.65);
+
+  /* ── Typography ── */
+  --font-display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --font-body:    "Inter", "Segoe UI", system-ui, sans-serif;
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.35rem;
+  --text-2xl:  1.7rem;
+  --text-3xl:  2.1rem;
+  --text-4xl:  2.6rem;
+  --text-hero: clamp(2.6rem, 7.5vw, 5.2rem);
+
+  /* ── Layout ── */
+  --container:   72rem;   /* 1152px max content width */
+  --container-narrow: 56rem;
+  --space-section: clamp(4.5rem, 10vw, 8rem);
+  --nav-height:  4.5rem;
+
+  /* ── Radius ── */
+  --radius-sm: 0.6rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-full: 999px;
+
+  /* ── Shadows ── */
+  --shadow-soft: 0 2px 20px -4px rgba(0, 0, 0, 0.25);
+  --shadow-lift: 0 24px 60px -16px rgba(0, 0, 0, 0.45);
+  --shadow-glow: 0 0 60px -12px rgba(var(--accent-rgb), 0.45);
+
+  /* ── Motion ── */
+  --ease-out:  cubic-bezier(0.21, 0.47, 0.32, 0.98);
+  --ease-slow: cubic-bezier(0.76, 0, 0.24, 1);
+  --dur-fast:  0.25s;
+  --dur-med:   0.5s;
+  --dur-slow:  0.8s;
+}
+
+/* ── Light theme overrides ─────────────────────────────────
+   Toggled by JS: <html data-theme="light">                   */
+[data-theme="light"] {
+  --surface:        #fafafa;
+  --surface-raised: #ffffff;
+  --ink:            #09090b;
+  --ink-muted:      #52525b;
+  --ink-faint:      #a1a1aa;
+  --line:           #e4e4e7;
+  --line-rgb:       228, 228, 231;
+  --glass-bg:       rgba(255, 255, 255, 0.7);
+  --shadow-soft: 0 2px 20px -4px rgba(0, 0, 0, 0.08);
+  --shadow-lift: 0 24px 60px -16px rgba(0, 0, 0, 0.18);
+}

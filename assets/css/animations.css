@@ -1,0 +1,65 @@
+/* ============================================================
+   ANIMATIONS.CSS — KEYFRAMES + REVEAL CLASSES
+   ------------------------------------------------------------
+   HOW IT WORKS: add data-reveal to any element in HTML (or in
+   JS-generated markup). animations.js flips it to .is-revealed
+   when it scrolls into view. Optional data-reveal-delay="150"
+   staggers children (milliseconds).
+   Respects prefers-reduced-motion.
+   ============================================================ */
+
+/* ── Scroll reveal (fade-up) ── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0s);
+  will-change: opacity, transform;
+}
+[data-reveal].is-revealed { opacity: 1; transform: none; }
+
+/* Variants */
+[data-reveal="left"]  { transform: translateX(-32px); }
+[data-reveal="right"] { transform: translateX(32px); }
+[data-reveal="zoom"]  { transform: scale(0.94); }
+[data-reveal="left"].is-revealed,
+[data-reveal="right"].is-revealed,
+[data-reveal="zoom"].is-revealed { transform: none; }
+
+/* ── Hero word-by-word reveal ──
+   animations.js wraps each headline word in .word > .word-inner */
+.word { display: inline-block; overflow: hidden; padding-bottom: 0.12em; margin-bottom: -0.12em; vertical-align: bottom; }
+.word-inner { display: inline-block; transform: translateY(110%); animation: wordUp 0.8s var(--ease-out) forwards; }
+
+/* ── Keyframes ── */
+@keyframes wordUp   { to { transform: translateY(0); } }
+@keyframes fadeUp   { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes growLine { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes marquee  { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes floaty   { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes ping     { 0% { transform: scale(0.6); opacity: 1; } 80%, 100% { transform: scale(1.6); opacity: 0; } }
+@keyframes rotateSwap {
+  0%   { opacity: 0; transform: translateY(12px); }
+  12%  { opacity: 1; transform: none; }
+  88%  { opacity: 1; transform: none; }
+  100% { opacity: 0; transform: translateY(-12px); }
+}
+
+/* Rotating hero word (element re-triggered by JS) */
+.hero__rotator strong.is-swapping { animation: rotateSwap 2.6s ease both; }
+
+/* ── Filter grid transitions (filters.js) ── */
+.filter-item { transition: opacity 0.35s ease, transform 0.35s var(--ease-out); }
+.filter-item.is-hidden { opacity: 0; transform: scale(0.94); position: absolute; pointer-events: none; visibility: hidden; }
+
+/* ── Reduced motion: disable everything gracefully ── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-reveal] { opacity: 1; transform: none; }
+  .word-inner { transform: none; animation: none; }
+}
