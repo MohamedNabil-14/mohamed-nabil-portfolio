@@ -328,8 +328,9 @@ button.project-card__media { border: 0; padding: 0; background: none; cursor: zo
 .hero__portrait { position: relative; max-width: 22rem; margin-inline: auto; width: 100%; }
 .hero__portrait-title {
   font-family: var(--font-display); font-weight: 600; letter-spacing: -0.01em;
-  text-align: center; font-size: var(--text-xl); margin-bottom: 0.9rem;
-  background: linear-gradient(90deg, var(--accent), var(--accent-violet));
+  text-align: center; font-size: var(--text-3xl); margin-bottom: 0.9rem;
+  background-color: var(--accent);
+  /* background: linear-gradient(90deg, var(--accent), var(--accent-violet)); */
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: transparent;
 }
