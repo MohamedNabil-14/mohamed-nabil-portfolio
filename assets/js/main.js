@@ -120,7 +120,7 @@ function buildFooter() {
       <div>
         <p class="nav__logo">MN<span>.</span></p>
         <p class="muted" style="max-width:18rem;font-size:var(--text-sm);margin-top:0.8rem">
-          ${esc(s.role)} — designing exceptional Web, Mobile, SharePoint &amp; Power Apps experiences from Cairo, for anywhere.
+          ${esc(s.role)} — Design exceptional Web, Mobile, SharePoint and Microsoft Power Apps experiences with a strong focus on usability, accessibility and enterprise solutions.
         </p>
       </div>
       <nav aria-label="Footer">
