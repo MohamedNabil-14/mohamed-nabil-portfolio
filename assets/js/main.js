@@ -112,7 +112,7 @@ function buildFooter() {
     <a href="contact.html" aria-label="Go to contact page">
       <div class="marquee marquee--big" aria-hidden="true">
         <div class="marquee__track">
-          ${"<span>Let's build something great</span><span>Available — Full Time · Part Time · Freelancer</span>".repeat(3)}
+          ${"<span>Let's build something great</span><span>Ready to Collaborate</span>".repeat(3)}
         </div>
       </div>
     </a>
@@ -139,7 +139,7 @@ function buildFooter() {
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© ${year} ${esc(s.fullName)}. Designed with intent, built with vanilla HTML/CSS/JS.</p>
+      <p>© ${year} ${esc(s.fullName)}.</p>
       <button class="icon-btn to-top" aria-label="Back to top">${ICONS.up}</button>
     </div>`;
   document.body.appendChild(footer);

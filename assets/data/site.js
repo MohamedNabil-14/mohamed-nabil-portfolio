@@ -42,7 +42,7 @@ window.DATA.site = {
   },
 
   "hero": {
-    "eyebrow": "Available — Full Time · Part Time · Freelancer",
+    "eyebrow": "Available — Ready to Collaborate",
     "headline": ["I design", "exceptional digital", "experiences."],
     "rotating": ["Web applications", "Mobile applications", "SharePoint solutions", "Microsoft Power Apps", "Dashboards & CRM systems", "Design systems"],
     "intro": "I design exceptional Web, Mobile, SharePoint and Microsoft Power Apps experiences with a strong focus on usability, accessibility and enterprise solutions — currently shaping HR, CRM and administration platforms at Global Brands Group."
@@ -55,7 +55,7 @@ window.DATA.site = {
     { "value": 6, "suffix": "+", "label": "Years in enterprise environments" }
   ],
 
-  "domains": ["Web Application Design", "Mobile App Design", "SharePoint Design", "Microsoft Power Apps", "Dashboard Design", "Enterprise Systems", "CRM Systems", "Design Systems", "UX Design", "UI Design", "UX Research", "Graphic Design"],
+  "domains": ["Web Application Design", "Mobile App Design", "SharePoint Design", "Microsoft Power Apps Design", "Dashboard Design", "CRM Systems", "Design Systems", "UX Design", "UI Design", "UX Research", "Graphic Design"],
 
   "process": [
     { "step": "01", "title": "Discover",      "text": "Stakeholder workshops, business-goal alignment, and understanding the domain before touching pixels." },

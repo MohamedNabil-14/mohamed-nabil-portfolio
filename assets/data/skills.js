@@ -29,16 +29,16 @@ window.DATA.skills = [
   {
     "group": "Systems & Strategy",
     "skills": [
-      { "name": "Design Systems & Component Libraries", "level": 90 },
+      { "name": "Design Systems", "level": 86 },
       { "name": "Design Strategy & Discovery", "level": 84 },
-      { "name": "Accessibility (WCAG)", "level": 86 },
+      { "name": "Accessibility ", "level": 86 },
       { "name": "UX Metrics & Analytics", "level": 80 }
     ]
   },
   {
     "group": "Platforms & Development",
     "skills": [
-      { "name": "Microsoft Power Apps / SharePoint / Nintex", "level": 88 },
+      { "name": "Microsoft Power Apps / SharePoint / Nintex (Design)", "level": 76 },
       { "name": "HTML / CSS / Bootstrap", "level": 78 },
       { "name": "Design-to-Code Handoff", "level": 90 },
       { "name": "Graphic Design & Illustration", "level": 88 }
@@ -47,7 +47,7 @@ window.DATA.skills = [
 ];
 
 window.DATA.tools = [
-  "Figma", "FigJam", "Adobe XD", "Sketch", "Photoshop", "Illustrator", "InDesign",
-  "Notion", "Trello", "Microsoft Power Apps", "SharePoint", "Nintex",
+  "Figma", "FigJam", "Adobe XD", "Photoshop", "Illustrator", "InDesign",
+  "Notion", "Trello", "Microsoft Power Apps Design", "SharePoint Design", "Nintex Design",
   "HTML", "CSS", "Bootstrap"
 ];
